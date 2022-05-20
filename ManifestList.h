@@ -1,13 +1,14 @@
-#ifndef SLM_APPMANIFEST
-    #define SLM_APPMANIFEST
-    #include "Appmanifest.h"
-#endif
 #ifndef SLM_STD
     #define SLM_STD
     #include <iostream>
     #include <iterator>
     #include <list>
 #endif
+#ifndef SLM_APPMANIFEST
+#define SLM_APPMANIFEST
+    #include "Appmanifest.h"
+#endif
+
 
 using namespace std;
 typedef Appmanifest DT;

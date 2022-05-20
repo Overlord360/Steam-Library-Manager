@@ -8,6 +8,7 @@
 #include <string>
 #include <fstream>
 #include "ManifestList.h"
+#include "Appmanifest.h"
 
 using namespace std;
 int main() {
@@ -22,6 +23,13 @@ int main() {
          while ( getline (file, line) ){
             cout << line << endl;
         }
+        //Appmanifest mani(123);
+        Appmanifest mani(123);
+        ManifestList list = mani;
+        mani.setID(456);
+        list.push(mani);
+        cout << list << endl;
+        cout << list.pop() << endl;
     } else {
         cout << "FILE FUCKY WUCKY NOT OPEN" << endl;
         return -1;

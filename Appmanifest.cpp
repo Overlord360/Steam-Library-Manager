@@ -1,4 +1,4 @@
-#include Appmanifest.h
+#include "Appmanifest.h"
 #include <cstdlib>
 
 //constructors
@@ -11,15 +11,17 @@ Appmanifest::Appmanifest(int ID_){
 }
 
 // empty destructor
-Appmanifest::~Appmanifest(){}
+Appmanifest::~Appmanifest(){
+
+}
 
 //getters
-int getID() const {return ID;}
+int Appmanifest::getID() const {return ID;}
 
 //setters
-void setID(const int ID_) {ID = ID_;}
+void Appmanifest::setID(const int ID_) {ID = ID_;}
 
 ostream& operator <<(ostream& out, const Appmanifest& value){
-    out << "(" value.getID << ")";
+    out << "(" << value.getID() << ")";
     return out;
 }

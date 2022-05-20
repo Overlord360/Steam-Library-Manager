@@ -1,8 +1,8 @@
 #ifndef APPMANIFEST_H
-#define APPMANIFEST_H
-#include <string>
-#include <cstdlib>
-#include <iostream>
+    #define APPMANIFEST_H
+    #include <string>
+    #include <cstdlib>
+    #include <iostream>
 using namespace std;
 
 class Appmanifest {
