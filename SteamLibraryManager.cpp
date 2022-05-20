@@ -16,7 +16,7 @@ int main() {
     cout << "Steam Library Manager - " << version << endl;
 
     fstream file;
-    file.open("./appmanifests/appmanifest_60.acf", ios::in);
+    file.open("./appmanifests/appmanifest_72850.acf", ios::in);
 
     if(file.is_open()){
         string line;
