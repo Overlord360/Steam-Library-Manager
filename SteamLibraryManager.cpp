@@ -23,7 +23,6 @@ int main() {
          while ( getline (file, line) ){
             cout << line << endl;
         }
-        //Appmanifest mani(123);
         Appmanifest mani(123);
         ManifestList list = mani;
         mani.setID(456);
