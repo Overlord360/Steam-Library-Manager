@@ -1,8 +1,11 @@
 #ignore the references folder
 references/
 
-#ignore .json
+#json files
 *.json
+
+#appmanifests
+*.acf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -253,10 +256,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#random jsons
-*.json
 
-#appmanifests
-*.acf
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,c++
