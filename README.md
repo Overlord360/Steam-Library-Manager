@@ -1,6 +1,34 @@
 # Steam-Library-Manager
 Manage your steam library across different drives and network attached storage
 
+## Set up dev environment
+Set up python virtual environment
+
+``` bat
+python -m venv ./venv 
+```
+
+Activate virtual environment:
+``` bat
+cd venv\scripts
+activate
+cd ..\.. 
+
+```
+
+Install requirements
+``` bat
+pip install -r requirements.txt
+```
+
+Run application
+``` bat
+python Steam-Library-Manager.py
+```
+
+
+
+
 # TODO
 ## Command Line
 - [ ] create appmanifest object
