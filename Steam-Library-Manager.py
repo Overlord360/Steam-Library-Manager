@@ -11,14 +11,11 @@ def main():
     #BaseFunctions.helloWorld()
 
     path = os.path.join(os.getcwd(), "appmanifests")
-    print(path)
-    fileList = BaseFunctions.getFilesFromPath(path, ".acf")
-    jsonList = []
-    for file in fileList:
-        parsedFile = BaseFunctions.parseManifest(file)
-        if(parsedFile == None):
-            debug.printErr(f"Could not parse file: {file}")
-        jsonList.append(parsedFile)
+    debug.printVerbose(f"filepath: {path}")
+    
+    jsonList = BaseFunctions.getManifests(path)
+
+    print(jsonList[0])
 
 if __name__ == "__main__":
     main()

@@ -1,3 +1,8 @@
+#ignore the references folder
+references/
+
+#ignore .json
+*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
